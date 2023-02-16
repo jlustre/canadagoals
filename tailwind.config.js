@@ -10,7 +10,7 @@ module.exports = {
         "./resources/views/**/*.blade.php",
         "./vendor/filament/**/*.blade.php",
     ],
-
+    darkMode: "class",
     theme: {
         extend: {
             fontFamily: {
@@ -18,9 +18,9 @@ module.exports = {
             },
             colors: {
                 danger: colors.rose,
-                primary: colors.blue,
-                success: colors.green,
-                warning: colors.yellow,
+                primary: colors.green,
+                success: colors.blue,
+                warning: colors.purple,
             },
         },
     },

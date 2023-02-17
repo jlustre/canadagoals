@@ -18,9 +18,9 @@ module.exports = {
             },
             colors: {
                 danger: colors.rose,
-                primary: colors.green,
+                primary: colors.red,
                 success: colors.blue,
-                warning: colors.purple,
+                warning: colors.green,
             },
         },
     },

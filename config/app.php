@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'THZ4Welness'),
+    'name' => env('APP_NAME', 'CanadaGOALS'),
 
     /*
     |--------------------------------------------------------------------------

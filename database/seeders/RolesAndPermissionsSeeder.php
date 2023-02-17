@@ -98,7 +98,8 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // CREATE ADMINS & USERS
         User::create([
-            'name' => 'super admin',
+            'name' => 'superadmin',
+            'sponsor' => 'superadmin',
             'is_admin' => 1,
             'email' => 'jclustre@gmail.com',
             'email_verified_at' => now(),
@@ -108,6 +109,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         User::create([
             'name' => 'admin',
+            'sponsor' => 'superadmin',
             'is_admin' => 1,
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
@@ -117,6 +119,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         User::create([
             'name' => 'moderator',
+            'sponsor' => 'admin',
             'is_admin' => 1,
             'email' => 'moderator@admin.com',
             'email_verified_at' => now(),
@@ -126,6 +129,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         User::create([
             'name' => 'developer',
+            'sponsor' => 'admin',
             'is_admin' => 1,
             'email' => 'developer@admin.com',
             'email_verified_at' => now(),
@@ -135,7 +139,8 @@ class RolesAndPermissionsSeeder extends Seeder
 
         for ($i=1; $i < 50; $i++) {
             User::create([
-                'name' => 'Test '.$i,
+                'name' => 'test'.$i,
+                'sponsor' => 'admin',
                 'is_admin' => 0,
                 'email' => 'test'.$i.'@test.com',
                 'email_verified_at' => now(),

@@ -25,4 +25,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/contact_us', function () {
+        return view('pages.contact_us');
+    })->name('contact_us');
 });
